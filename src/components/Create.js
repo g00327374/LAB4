@@ -1,3 +1,6 @@
+// allows to track state in a function component
+// it returns an array with two values
+// the current state and a function to update it
 import { useState } from "react";
 
 function Create(){
@@ -7,6 +10,9 @@ function Create(){
     const [cover, setCover] = useState('');
     const [author, setAuthor] = useState('');
     // stop getting called multiple times
+    // handslesubmit is a wrapper to manage
+    // data inputs, validation, etc.
+    // it is called when the form is submitted
     const handleSubmit = (e)=>{
         e.preventDefault();
         console.log("Title: " + title +

@@ -18,6 +18,7 @@ function Read(){
                 setData(response.data.books);
             }
         )
+        // if .then does not execute then run this catch method
         .catch(
             (error)=>{
                 console.log(error);
