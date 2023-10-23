@@ -10,6 +10,8 @@ function Read(){
     const [data, setData] = useState([]);
 
     useEffect(()=>{
+        // axios is javascript library for making http request
+        // from a web browser or a Node.js server
         axios.get('https://jsonblob.com/api/jsonblob/1161593332966481920')
         // write the method to handle the response that came back
         .then(
